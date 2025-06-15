@@ -1,48 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Finety</title>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-header {
-  background: #222;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-main {
-  flex: 1;
-  padding: 40px;
-  text-align: center;
-}
-footer {
-  background: #f0f0f0;
-  text-align: center;
-  padding: 20px;
-}
-footer a {
-  color: #0066cc;
-  text-decoration: none;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finety</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #222;
+      color: #fff;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .navbar h1 {
+      font-size: 24px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #66b0ff;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 15px;
+      }
+      .hero h2 {
+        font-size: 28px;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>Finety</h1>
-</header>
-<main>
-  <p>Bienvenue sur notre page d'accueil.</p>
-</main>
-<footer>
-  <p>Contact: <a href="mailto:contact@finety.com">contact@finety.com</a></p>
-  <p><a href="https://hbble.com">Payment Crypto</a></p>
-</footer>
+  <header>
+    <div class="navbar">
+      <h1>Finety</h1>
+      <nav class="nav-links">
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <h2>Bienvenue chez Finety</h2>
+      <p>Votre solution de paiement crypto simple et sécurisée.</p>
+    </div>
+  </header>
+  <main>
+    <p>Découvrez nos services adaptés à vos besoins.</p>
+  </main>
+  <footer>
+    <p>Contact: <a href="mailto:contact@finety.com">contact@finety.com</a></p>
+    <p>&copy; 2024 Finety</p>
+  </footer>
 </body>
 </html>
